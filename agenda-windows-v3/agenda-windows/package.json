@@ -1,0 +1,25 @@
+{
+  "name": "agenda-pessoal",
+  "version": "3.0.0",
+  "description": "Agenda, kanban e monitor de not\u00edcias",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "local.agenda.pessoal",
+    "productName": "Agenda",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

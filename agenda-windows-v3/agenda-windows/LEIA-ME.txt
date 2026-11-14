@@ -1,0 +1,40 @@
+AGENDA v3 - agenda, kanban e noticias (gratis, 100% local) - WINDOWS
+
+INSTALAR (e ATUALIZAR)
+1. Instale o Node.js LTS (https://nodejs.org), so uma vez.
+2. Extraia o zip e de dois cliques em Instalar.bat. Ele instala em %LOCALAPPDATA%\AgendaApp,
+   cria o atalho "Agenda" (area de trabalho e menu Iniciar) e abre o app.
+3. Para atualizar no futuro: extraia o novo zip e rode Instalar.bat de novo. Seus dados continuam salvos
+   (ficam em %APPDATA%\agenda-pessoal, com backup diario automatico em "backups").
+   Alternativa sem instalar: Iniciar.bat roda direto da pasta extraida.
+
+NOVIDADES DA V3
+- Alarmes com som: no item, escolha "Alarme" (na hora ate 1 dia antes). Toca o som, mostra um aviso com
+  Abrir / +5 min / +15 min / Concluir, e a notificacao do Windows abre o app direto na atividade.
+- Checklist nos itens: copie ou recorte itens do checklist e cole em outro item (outro dia); reordene com as setas.
+- Cores: individual (no item ou botao direito), em conjunto (Ctrl+clique para selecionar varios) e por tema (aba Temas).
+- Aba Temas: todos os temas, contagem por coluna, atividades de cada um, cor, renomear, selecionar todos.
+- Tamanho: botoes Altura/Largura na Agenda e Semana; arraste a borda dos dias da semana no mes para alargar colunas
+  (duplo clique restaura). A interface se ajusta sozinha a cada monitor; manual em Ajustes ou Ctrl + roda do mouse.
+- Buscas: caixa no topo (Ctrl+K) filtra todas as telas; cada coluna do Kanban tem seu proprio filtro.
+- Copiar / Recortar / Colar / Duplicar: botao direito num item, Ctrl+C / Ctrl+X / Ctrl+V (item e dia sob o mouse),
+  ou arraste o item para outro dia (segure Ctrl para copiar). Botao direito num dia ou coluna cola ali.
+- Janela de edicao: so fecha com 2 cliques fora (Esc fecha direto). Selecionar texto arrastando nao fecha mais.
+- Duracao em dias (ex.: 4 ou 9 dias) e repeticao diaria, dias uteis, semanal ou mensal.
+- Itens repetidos ou de varios dias: marque cada dia separadamente ("so terca") ou "todos os dias".
+- Imagens: barra de busca estilo Google Imagens (Steam, AniList, Wikipedia, Openverse, Commons; RAWG e TMDB com chave
+  gratis em Ajustes), colar endereco da imagem ou escolher do PC. As imagens ficam salvas localmente.
+- Noticias: resumos melhores (le o texto da materia quando possivel), favoritar "Ler depois", mais fontes por tema
+  (Google News, Reddit, YouTube, RSS) agrupadas por tipo, e prioridade por tema (avisar na hora ou so no resumo).
+- Extras: backup diario, exportar .ics (Google Agenda), abrir com o Windows de verdade, posicao da janela lembrada.
+
+CELULAR
+1. Deixe o app aberto no PC (fechar a janela mantem na bandeja) e rode Liberar-Firewall.bat uma vez, como administrador.
+2. Em Ajustes > Acesso pelo celular aparecem o PIN e o endereco com QR code.
+3. Mesma Wi-Fi: abra o endereco no navegador do celular, ou use o app Android (agenda-android-v3.zip).
+4. FORA DE CASA (gratis): instale o Tailscale no PC e no celular, entre na MESMA conta nos dois e use o endereco
+   "Tailscale" de Ajustes. O PC precisa estar ligado.
+
+RESUMOS COM IA (opcional, gratis)
+Instale o Ollama (https://ollama.com) e rode: ollama pull qwen2.5:7b  (roda bem na sua placa de 12 GB).
+Em Ajustes use "Testar" e escolha o modelo.
